@@ -46,3 +46,17 @@ ggplot()+geom_line(data=dat,aes(x=x,y=y))
 sample(1:10,100,replace = TRUE)
 rnorm(100,50,10)
 rnorm(100,50,90)
+rep(1,100)
+x<-rep(1,100)
+y<-rnorm(100,50,10)
+x
+y
+dat<-data.frame(x,y)
+dat
+x<-1
+y<-50
+mean<-data.frame(x,y)
+mean
+library(ggplot2)
+ggplot()+geom_point(data=dat,aes(x=x,y=y))+
+  geom_point(data=mean,aes(x=x,y=y),size=5,color="red")
