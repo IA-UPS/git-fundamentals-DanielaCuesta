@@ -13,3 +13,10 @@ y<-9
 dat<-data.frame(x,y)
 ggplot()+geom_point(data=dat,aes(x=x,y=y),size=5,color="blue")
 ggplot()+geom_point(data=dat,aes(x=x,y=y),size=10,color="red")
+x<-c(2,5,1)
+y<-c(6,4,9)
+dat<-data.frame(x,y)
+ggplot()+geom_point(data=dat,aes(x=x,y=y),size=5,color="blue")
+ggplot()+geom_point(data=dat,aes(x=x,y=y),size=10,color="red")+
+  scale_x_continuous(limits = c(0,15),breaks=seq(0,15,1))+
+  scale_y_continuous(limits = c(0,15),breaks=seq(0,15,1))
