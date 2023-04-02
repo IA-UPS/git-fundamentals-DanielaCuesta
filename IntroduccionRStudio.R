@@ -31,3 +31,15 @@ dat$x
 dat$x<-c(-2,7)
 dat$y<-c(13,5)
 ggplot()+geom_line(data=dat,aes(x=x,y=y))
+x<-c(0,10)
+y<-3*x+1
+y
+dat<-data.frame(x,y)
+dat
+ggplot()+geom_line(data = dat,aes(x=x,y=y))
+x
+y<--5*x-7
+y
+dat<-data.frame(x,y)
+dat
+ggplot()+geom_line(data=dat,aes(x=x,y=y))
