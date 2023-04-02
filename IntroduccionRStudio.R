@@ -7,3 +7,9 @@ x<-c(3,6,8)
 y<-c(1,2,3)
 s<-c(4,5,6)
 D<-data.frame(x,y,s)
+library(ggplot2)
+x<-4
+y<-9
+dat<-data.frame(x,y)
+ggplot()+geom_point(data=dat,aes(x=x,y=y),size=5,color="blue")
+ggplot()+geom_point(data=dat,aes(x=x,y=y),size=10,color="red")
