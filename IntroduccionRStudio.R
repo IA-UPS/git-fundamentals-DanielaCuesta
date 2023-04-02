@@ -81,3 +81,25 @@ means
 ggplot()+
   geom_point(data=dat,aes(x=x,y=y))+
   geom_point(data=means,aes(x=x,y=y),size=5,color="red")
+x<-c(0,25)
+y<-3*x+1
+y
+line<-data.frame(x,y)
+ggplot()+
+  geom_line(data=line,aes(x=x,y=y))
+x<-c(1,9,15,22)
+y<-3*x+1
+y
+means<-data.frame(x,y)
+means
+ggplot()+
+  geom_line(data=line,aes(x=x,y=y))+
+  geom_point(data=means,aes(x=x,y=y),size=5,color="red")
+x<-c(rep(1,100),rep(9,100),rep(15,100),rep(22,100))
+y<-c(rnorm(100,4,10),rnorm(100,28,10),rnorm(100,46,10),rnorm(100,67,10))
+dat<-data.frame(x,y)
+dat
+ggplot()+
+  geom_line(data=line,aes(x=x,y=y))+
+  geom_point(data=means,aes(x=x,y=y),size=5,color="red")+
+  geom_point(data=dat,aes(x=x,y=y))
