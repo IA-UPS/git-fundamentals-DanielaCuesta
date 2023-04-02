@@ -43,3 +43,6 @@ y
 dat<-data.frame(x,y)
 dat
 ggplot()+geom_line(data=dat,aes(x=x,y=y))
+sample(1:10,100,replace = TRUE)
+rnorm(100,50,10)
+rnorm(100,50,90)
