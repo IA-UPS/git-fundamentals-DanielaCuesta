@@ -60,3 +60,24 @@ mean
 library(ggplot2)
 ggplot()+geom_point(data=dat,aes(x=x,y=y))+
   geom_point(data=mean,aes(x=x,y=y),size=5,color="red")
+x<-rep(1,100)
+x
+x<-c(x,rep(9,100))
+x
+x<-c(x,rep(15,100))
+x
+y<-rnorm(100,50,10)
+y
+y<-c(y,rnorm(100,30,10))
+y
+y<-c(y,rnorm(100,78,10))
+y
+dat<-data.frame(x,y)
+dat
+x<-c(1,9,15)
+y<-c(50,30,78)
+means<-data.frame(x,y)
+means
+ggplot()+
+  geom_point(data=dat,aes(x=x,y=y))+
+  geom_point(data=means,aes(x=x,y=y),size=5,color="red")
